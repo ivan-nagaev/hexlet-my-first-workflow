@@ -1,0 +1,9 @@
+name: say-hello
+on: push
+jobs:
+  my-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: says
+        uses: actions/checkout@v3
+      - run: make say-hello
